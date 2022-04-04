@@ -1,0 +1,133 @@
+Array:
+========
+	1. It will not support dissimilar data type
+	2. It has high memory wastage
+	3. It has fixed length
+
+
+COLLECTION:(I)
+=============
+
+   Group of objects
+
+   To Overcome the disadvantages of array we go for collection
+       1. It supports dissimilar data type
+       2. No memory wastage
+       3. Dynamic memory allocation
+
+Parent for all the Classes is Object
+Parent for all the Interface is Search Context
+
+					   SEARCH CONTEXT(I)
+						|
+					     ITERABLE(I)
+						|
+					     COLLECTION (I)
+					
+
+	List(I)					Set(I)(RIA)				Map(I)(RIARR)
+
+1. ArrayList(C)				     1. HashSet(C)			     1. HashMap(C)
+2. LinkedList(C)			     2. LinkedHashSet(C)		     2. LinkedHashMap(C)
+3. VectorList(C)			     3. TreeSet(C)			     3. TreeMap(C)
+										     4. HashTable(C)
+										     5. ConcurrentHashMap(C)
+
+
+1. List:								
+=========
+1. Interface								
+2. It prints in insertion order					
+3. It allows duplicate						
+4. It is index based
+
+
+	1. ArrayList - Searching & retrieving is the best case  
+			Deletion & Insertion is the worst case  	
+			 Asynchronised (not thread safe)
+	2. LinkedList-Deletion & Insertion is the best case  
+			Searching & retrieving is the worst case 
+			 Asynchronised (not thread safe)
+	3. VectorList - synchronised(thread safe)
+
+List Methods:
+==============
+Add
+Size
+Get
+Remove
+Set
+Contains
+IndexOf
+Clear
+Retain All
+Add All
+Remove All
+---------------------------------------------------------------------------------
+2. Set:
+========
+1. It is an Interface
+2. It prints in random order
+3. It will not allow duplicate
+4. It allows one null but not the 
+   duplicate.
+5. It is value based
+
+1. HashSet:
+============
+1. It is a class
+2. It prints in random order
+3. It will not allow duplicate.
+4. It will allow single null.
+
+2. LinkedHashSet:
+=================
+1. It is a class
+2. It prints in insertion order
+3. It will not allow duplicate.
+4. It will allow single null.
+
+
+3. TreeSet:
+============
+1. It is a class
+2. It prints in ascending order
+3. It will not allow duplicate.
+4. It will not allow even single null.
+
+Map:
+=====
+
+1. Map is an interface.
+2. It has a key, value pair.
+3. Key + value = single entry.
+4. Key will not allow duplicates, it will overide the value.
+5. Value will allow duplicate.
+6. Key will allow duplicate null.
+7. Value will allow both the null.
+
+Map Methods :
+============
+containsKey
+containsValue
+entrySet
+get
+KeySet
+size
+values
+
+1. HashMap:
+===========
+1. It is a class
+2. It prints in random order
+3. Key will not allow duplicates, it will overide the value. 
+
+2. LinkedHasMap:
+=================
+1. It prints in Insertion order
+
+3. TreeMap:
+=============
+1. It prints in Ascending order
+2. It will not allow single null.
+
